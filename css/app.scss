@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@600&display=swap');
+@import 'variables';
+
+@mixin grid-limit-medium {
+
+  padding: 0 $spacing-base;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
+
+
+@mixin common-list-styles {
+  padding: 0 $spacing-base;
+
+  li {
+    list-style-type: none;
+    padding: $spacing-base 0 $spacing-base;
+    border-bottom: 1px solid $border-list;
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-base;
+  }
+}
+
+@mixin category {
+  color: $color-cat;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-para;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@mixin heading-h3 {
+  color: $color-heading;
+  font-size: $font-size+8;
+  line-height: 32px;
+  font-family: $font-heading;
+  margin: $spacing-mini 0;
+}
+
+@mixin stand-first {
+  color: $color-par;
+  font-size: $font-size;
+  line-height: 19px;
+  font-family: $font-para;
+}
+
+.inner-container {
+  @include grid-limit-medium;
+}
+
+.cs-cat {
+  @include category;
+  text-decoration: none;
+}
+
+.cs-heading {
+  @include heading-h3;
+}
+
+.cs-para {
+  @include stand-first;
+}
+
+.cs-list {
+  @include common-list-styles;
+}
+
+.cs-section-right {
+  width: 200px;
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.thumbnail {
+  max-width: 100%;
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@600&display=swap");
+.inner-container {
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .inner-container {
+    max-width: 768px;
+    padding: 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inner-container {
+    max-width: 1024px;
+  }
+}
+
+.cs-cat {
+  color: #0059bf;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.cs-heading {
+  color: #000;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Roboto Slab", serif;
+  margin: 16px 0;
+}
+
+.cs-para {
+  color: #606669;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Lato", sans-serif;
+}
+
+.cs-list {
+  padding: 0 24px;
+}
+
+.cs-list li {
+  list-style-type: none;
+  padding: 24px 0 24px;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+}
+
+.cs-section-right {
+  width: 200px;
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+/*# sourceMappingURL=app.css.map */
